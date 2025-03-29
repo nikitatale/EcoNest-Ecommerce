@@ -1,0 +1,253 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+}
+
+.categories {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.categories h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category-item {
+    background: #d9f99d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+}
+
+.category-item img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.category-item h3 {
+    margin: 15px 0 10px;
+    font-size: 24px;
+    color: #222;
+}
+
+.category-item p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.category-item a {
+    text-decoration: none;
+    color: #fff;
+    background: #84cc16;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+}
+
+.category-item a:hover {
+    background: #437004;
+}
+
+
+@media (max-width: 768px) {
+    .category-item h3 {
+        font-size: 20px;
+    }
+    .category-item p {
+        font-size: 14px;
+    }
+    .category-item a {
+        padding: 8px 15px;
+    }
+}
+
+
+
+
+
+.section-header {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+  
+  
+  .product-category {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background: var(--bg-div);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .product-category h3 {
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  
+  .product-category .product-card {
+    display: inline-block;
+    width: 45%;
+    margin: 1rem;
+    background: #ffffff;
+    padding: 1rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .product-card h4 {
+    font-size: 1.5rem;
+    color: var(--subHeading);
+    margin-bottom: 0.5rem;
+  }
+  
+  .product-card p {
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .product-category .product-card {
+      width: 100%;
+    }
+  }
+
+
+
+.collections {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.collections h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.collections .subtitle {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.collection-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.collection-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.collection-item:hover {
+    transform: scale(1.05);
+}
+
+.collection-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.collection-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+    border-radius: 0 0 10px 10px;
+}
+
+.collection-info h3 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+.collection-info p {
+    margin: 0 0 15px;
+    font-size: 16px;
+}
+
+.collection-info a {
+    text-decoration: none;
+    color: #fff;
+    background: #ff7b00;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background 0.3s ease-in-out;
+}
+
+.collection-info a:hover {
+    background: #ff5500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .collection-info h3 {
+        font-size: 20px;
+    }
+    .collection-info p {
+        font-size: 14px;
+    }
+    .collection-info a {
+        padding: 8px 15px;
+    }
+}
